@@ -42,17 +42,20 @@ The system is **lightweight and modular**, making it ideal for demonstrations, p
 
 ```
 
-ATM-System/
+ATM_SYSTEM/
 │
-├── main.py                # Main ATM logic (Python)
-├── arduino/               # Arduino integration code
-│   └── atm\_input.ino      # Handles keypad & serial communication
-├── data/
-│   └── accounts.json      # Stores user data and balances
-├── extras/
-│   ├── engineering\_drawing.png   # ATM design drawing
-│   └── interface\_mockup.png      # UI/UX mockup
-└── README.md
+├── Model/                   # Backend logic and database interactions
+│   ├── init.py          # Initializes the Model package
+│   ├── admin.py             # Admin-related functionalities
+│   ├── database.db          # Database file (SQLite)
+│   ├── db.py                # Database connection and utility functions
+│   └── Queries.py           # SQL queries or database operation functions
+└── src/                     # Source code for the main application
+├── balance.txt          # (Could be a temporary/legacy balance file, or for logging)
+├── banking_program.py   # Core banking functionalities
+├── database.db          # Another database file (might be for different purpose or redundancy)
+├── main.py              # Main application entry point (Python)
+└── server.py            # Handles server-side operations (e.g.,
 
 ```
 
